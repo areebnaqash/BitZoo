@@ -2,7 +2,7 @@
 **A Life Simulator game written in Python.**
 
 ## Contents:
-* [About](https://github.com/areebnaqash/BitZoo/edit/main/README.md/about)
+* [About](https://github.com/areebnaqash/BitZoo/edit/main/README.md/About)
 * [Features](https://github.com/areebnaqash/BitZoo/edit/main/README.md/features) -- *Example image included*
 * [Installation](https://github.com/areebnaqash/BitZoo/edit/main/README.md/installation)
 * [Initializing the game](https://github.com/areebnaqash/BitZoo/edit/main/README.md/initializing-the-game)
