@@ -1,4 +1,5 @@
 BitZoo: A terminal based (TUI) Life simulator game written in Python.
+
 Copyright (C) 2024  Areeb Shafi Naqash
 
 This program is free software: you can redistribute it and/or modify
