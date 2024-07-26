@@ -1,0 +1,1607 @@
+{
+    "life": {
+        "jobs": {
+            "Entry": {
+                "Dishwasher": {
+                    "req": "None",
+                    "pay": [
+                        30000,
+                        35000
+                    ]
+                },
+                "Cleaner": {
+                    "req": "None",
+                    "pay": [
+                        32000,
+                        38000
+                    ]
+                },
+                "Waiter": {
+                    "req": "None",
+                    "pay": [
+                        35000,
+                        40000
+                    ]
+                }
+            },
+            "Low": {
+                "Mechanic": {
+                    "req": "None",
+                    "pay": [
+                        42000,
+                        47000
+                    ]
+                },
+                "Salesperson": {
+                    "req": "None",
+                    "pay": [
+                        45000,
+                        50000
+                    ]
+                },
+                "Telemarketer": {
+                    "req": "None",
+                    "pay": [
+                        50000,
+                        55000
+                    ]
+                }
+            },
+            "Mid": {
+                "Chef": {
+                    "req": "High School",
+                    "pay": [
+                        60000,
+                        65000
+                    ]
+                },
+                "Elementary School Teacher": {
+                    "req": "High School",
+                    "pay": [
+                        60000,
+                        65000
+                    ]
+                },
+                "Middle School Teacher": {
+                    "req": "High School",
+                    "pay": [
+                        65000,
+                        70000
+                    ]
+                },
+                "High School Teacher": {
+                    "req": "Bachelors",
+                    "pay": [
+                        70000,
+                        75000
+                    ]
+                }
+            },
+            "High": {
+                "Jr. Biotechnologist": {
+                    "req": "Bachelors in Biology",
+                    "pay": [
+                        75000,
+                        80000
+                    ]
+                },
+                "Jr. Engineer": {
+                    "req": "Bachelors in Engineering",
+                    "pay": [
+                        80000,
+                        85000
+                    ]
+                },
+                "Jr. Software Engineer": {
+                    "req": "Bachelors in Computer Science",
+                    "exp": "none",
+                    "pay": [
+                        85000,
+                        90000
+                    ]
+                }
+            },
+            "Top": {
+                "Biotech Researcher": {
+                    "req": "Ph.d. in Biology",
+                    "pay": [
+                        100000,
+                        120000
+                    ]
+                },
+                "Sr. Engineer": {
+                    "req": "Bachelors in Engineering",
+                    "pay": [
+                        120000,
+                        135000
+                    ]
+                },
+                "Sr. Software Engineer": {
+                    "req": "Bachelors in Computer Science",
+                    "pay": [
+                        135000,
+                        150000
+                    ]
+                }
+            },
+            "Special": {
+                "Professor": {
+                    "req": "Ph.D.",
+                    "pay": [
+                        100000,
+                        150000
+                    ]
+                },
+                "Lawyer": {
+                    "req": "J.D.",
+                    "pay": [
+                        175000,
+                        225000
+                    ]
+                },
+                "Doctor": {
+                    "req": "M.D.",
+                    "pay": [
+                        200000,
+                        400000
+                    ]
+                }
+            }
+        },
+        "diseases": {
+            "mild_birth_defects": [
+                "Clubfoot",
+                "Cleft Lip",
+                "Cleft Palate",
+                "Polydactyly",
+                "Syndactyly",
+                "Umbilical Hernia",
+                "Hypospadias",
+                "Microtia",
+                "Mild Spina Bifida",
+                "Atrial Septal Defect"
+            ],
+            "fatal_birth_defects": [
+                "HIV",
+                "Fatal Spina Bifida",
+                "Edwards Syndrome",
+                "Down Syndrome",
+                "Anencephaly",
+                "Diaphragmatic Hernia",
+                "Hemophilia",
+                "Potter's Sequence",
+                "Skeletal Dysplasia",
+                "HLHS"
+            ],
+            "mild": [
+                "Viral Infection",
+                "Fungal Infection",
+                "Constipation",
+                "Fever",
+                "High Blood Pressure",
+                "Low Blood Pressure"
+            ],
+            "fatal": [
+                "Lung Cancer",
+                "Thyroid Cancer",
+                "Skin Cancer",
+                "Brain Tumor",
+                "Coronary Artery Disease"
+            ]
+        },
+        "lifestyles": {
+            "No Lifestyle -- Vibe with those streets, bro.": 0,
+            "Basic Lifestyle -- Government ration for 1 person + Low tier apartment (1 Bedroom, 1 Bathroom & 1 Kitchen)": 10000,
+            "Middle Class Lifestyle -- Food for 2 people + Mid tier apartment (1 Bedroom, 1 Bathroom, 1 Living Room & 1 Kitchen)": 50000,
+            "Upper Class Lifestyle -- Middle Class Lifestyle + 2 children accomodation + Basic Healthcare": 200000,
+            "Deluxe Lifestyle -- Food from top vendors + Villa + Advanced Healthcare + Entertainment": 1000000
+        }
+    },
+    "birth_events": {
+        "keys": [
+            "{first_name}",
+            "{last_name}",
+            "{birthday}",
+            "{location}",
+            "{birth_situation}",
+            "{namer}",
+            "{adoptive}",
+            "{parents}"
+        ],
+        "birth_situation": [
+            "at a government hospital",
+            "at a private hospital",
+            "at my home",
+            "during a festival",
+            "in a stable",
+            "in an ambulance",
+            "on a rooftop"
+        ],
+        "namer": [
+            "My mother",
+            "My Father",
+            "My Grandfather",
+            "My Grandmother",
+            "A relative",
+            "An uncle",
+            "An aunt",
+            "A homeless person",
+            "A nurse"
+        ],
+        "adoptive": [
+            "[red]My parents left me near a dumpster[/red]",
+            "[red]Both of my parents died in a car crash[/red]",
+            "[red]My father was dead long before my birth and my mother passed away[/red] right",
+            "[red]I was abducted and displaced[/red]"
+        ],
+        "intro": [
+            "My name is {first_name} {last_name}. I was born on {birthday} in {location}. I am being raised by {parents}.",
+            "I, {first_name} {last_name}, took my first breath on {birthday} {birth_situation} in {location}. I was welcomed into this world by {parents}.",
+            "I was born to {parents} -- on {birthday} in {location}. {namer} decided to name me {first_name}.",
+            "I, {first_name} {last_name}, was adopted by {parents} -- right after my birth on {birthday} in {location}.",
+            "My name is {first_name}. {adoptive} after my birth on {birthday} in {location}; [green]{parents} -- later decided to adopt me.[/green]"
+        ],
+        "health": {
+            "mild": [
+                "[yellow]My birth was a bit problematic, but things seem fine, for now.[/yellow]",
+                "[yellow]The doctors were quite worried when I didn't respond to any stimuli upon birth.[/yellow]",
+                "[yellow]I faced the issue of Perinatal Asphyxia during my birth, but the lack of oxygen wasn't that long.[/yellow]",
+                "[yellow]Things don't feel right. Am I perhaps... homesick?[/yellow]"
+            ],
+            "severe": [
+                "[dark_orange]My mother had faced many hardships during her pregnancy. There has to be some underlying effect of it, on me.[/dark_orange]",
+                "[dark_orange]I suffer from {diseases}.[/dark_orange]",
+                "[dark_orange]My congenital diagnosis tells that I might be suffering from {diseases}.[/dark_orange]",
+                "[dark_orange]I was diagnosed with {diseases}[/dark_orange]."
+            ],
+            "fatal": [
+                "[red]The doctors were disheartened upon diagnosing me for {diseases}.[/red]",
+                "[red]The dawn of my life has gifted me {diseases} on my birthday.[/red]",
+                "[red]I was, well... born. So was my {diseases}, with me.[/red]"
+            ]
+        }
+    },
+    "toddler_events": {
+        "keys": [
+            "{person}",
+            "{thing}",
+            "{feel}",
+            "{act}",
+            "{place}"
+        ],
+        "person": [
+            "grandfather",
+            "grandmother",
+            "aunt",
+            "uncle",
+            "elder cousin",
+            "nanny"
+        ],
+        "thing": [
+            "a teddy bear",
+            "a broken action figure",
+            "a book named 'Classical Mechanics'",
+            "a Raspberry Pi",
+            "a candy-bar",
+            "a book, titled 'Origin of Species'",
+            "an actually talking -- 'Talking Tom' toy"
+        ],
+        "feel": [
+            "[green]like[/green]",
+            "[green]love[/green]",
+            "[green]enjoy[/green]",
+            "[red]hate[/red]",
+            "[red]despise[/red]",
+            "[yellow]don't understand[/yellow]",
+            "[yellow]don't care[/yellow] about"
+        ],
+        "act": [
+            "crawling",
+            "walking",
+            "speaking",
+            "jumping",
+            "running",
+            "eating",
+            "doing poo-poo"
+        ],
+        "place": [
+            "the backyard",
+            "the bathroom",
+            "the kitchen",
+            "the lawn",
+            "the main road",
+            "a mall",
+            "a garden",
+            "a park",
+            "a cemetry",
+            "a carnival",
+            "a concert"
+        ],
+        "events": [
+            "My {person} handed me {thing}. I {feel} it.",
+            "I was crawling around in the living room and found {thing} on a sofa. I tried to reach it.",
+            "My {person} is helping me learn {act}. I think I {feel} {act}!",
+            "I practiced {act} with my {person}. I really {feel} that!",
+            "My {person} took me to {place}. I am still trying to process all those colours!",
+            "I ate some soil from the backyard of my house. It... wasn't tasty... at all.",
+            "A kid snatched my plush-toy from me. [red]I cried all day.[/red]",
+            "[green]I am getting better at {act}![/green]",
+            "I tried to stand up... and [red]failed[/red]... ten times!",
+            "[green]I started walking... on my own![/green]"
+        ]
+    },
+    "child_events": {
+        "keys": [
+            "{place}",
+            "{act}",
+            "{person}",
+            "{feel}",
+            "{subject}",
+            "{reaction}"
+        ],
+        "place": [
+            "a garden",
+            "a park",
+            "my grandmother's house",
+            "my friend's house",
+            "a museum",
+            "a cemetry",
+            "an adventure park",
+            "my cousin's house",
+            "my neighbour's house",
+            "a haunted mansion"
+        ],
+        "act": [
+            "played football there",
+            "started running around",
+            "shouted loudly",
+            "dig a hole",
+            "started dancing",
+            "observed it",
+            "tried to draw it",
+            "did nothing",
+            "carved a mark into the ground",
+            "cried for help"
+        ],
+        "person": [
+            "{parent}",
+            "grandfather",
+            "grandmother",
+            "cousin",
+            "uncle",
+            "aunt",
+            "nanny",
+            "teacher"
+        ],
+        "feel": [
+            "[green]like[/green]",
+            "[green]love[/green]",
+            "[red]hate[/red]",
+            "[red]despise[/red]",
+            "[yellow]don't care[/yellow] about",
+            "[yellow]don't understand[/yellow]"
+        ],
+        "subject": [
+            "Mathematics",
+            "Science",
+            "Language",
+            "Environmental Studies",
+            "Physical Education",
+            "Grammar"
+        ],
+        "reaction": [
+            "[red]told me to shut up[/red]",
+            "[red]scolded me[/red]",
+            "[red]ignored me[/red]",
+            "said that they didn't know",
+            "[green]told me that the Sun throws different colours around, and they're 'eaten' by the sky, except for the blue colour.[/green] I think I need more explaination..",
+            "said that it's because of 'Rayleigh scattering'. Did I even hear that right? I wonder what that means.."
+        ],
+        "events": [
+            "I went to {place} and {act}.",
+            "My {person} took me to {place}, I {act}.",
+            "Today was the first day of my school, after vacations. I {feel} it.",
+            "It was the last day of my school, before vacations. I {feel} holidays!",
+            "I made some friends while I was playing in my school ground.",
+            "I studied {subject} at school.",
+            "I think that I {feel} {subject}!",
+            "[red]I was reprimanded by my teacher[/red] after she came to know that I drew on the classroom walls. Is it really bad?",
+            "My {person} decided to teach me {subject} on a Sunday morning. I {feel} studying {subject} now!",
+            "I asked my {person}, 'Why is the sky blue?' and my {person} {reaction}.",
+            "I have started taking tuitions for {subject}."
+        ]
+    },
+    "young_teen_events": {
+        "keys": [
+            "{person}",
+            "{act}",
+            "{feel}",
+            "{place}",
+            "{subject}",
+            "{grade}",
+            "{puberty}"
+        ],
+        "person": [
+            "aunt",
+            "cousin",
+            "grandfather",
+            "grandmother",
+            "{parent}",
+            "friend"
+        ],
+        "act": [
+            "run",
+            "walk",
+            "talk",
+            "chat",
+            "eat",
+            "play"
+        ],
+        "feel": [
+            "[green]enjoy[/green]",
+            "[green]like[/green]",
+            "[green]love[/green]",
+            "[red]despise[/red]",
+            "[red]hate[/red]",
+            "[yellow]don't care[/yellow] about",
+            "[yellow]don't understand[/yellow]"
+        ],
+        "place": [
+            "a carnival",
+            "a cemetry",
+            "a concert",
+            "a garden",
+            "a haunted mansion",
+            "a haunted mansion",
+            "a museum",
+            "an adventure park",
+            "the backyard"
+        ],
+        "subject": [
+            "Mathematics",
+            "Physics",
+            "Biology",
+            "Chemistry",
+            "Language",
+            "History",
+            "Political Science",
+            "Geography",
+            "Literature",
+            "Poetry",
+            "Environmental Studies",
+            "Logical Reasoning"
+        ],
+        "grade": [
+            "a shining A+",
+            "an A",
+            "a B+",
+            "a B",
+            "a medicore C+",
+            "+ C",
+            "a D+",
+            "an embaressing D",
+            "a based F grade"
+        ],
+        "puberty": [
+            "hair on my armpits",
+            "hair on my groin",
+            "facial hair",
+            "pimples",
+            "stretch marks on my body"
+        ],
+        "events": [
+            "[yellow]I have been feeling a bit off lately.[/yellow]",
+            "[yellow]Things don't seem right... I used to love going out, now I wanna stay in my room, I don't know why.[/yellow]",
+            "I went out with my {person}, we visited {place} together. I think I {feel} spending time with my {person}.",
+            "I think that I prefer {act}ing, instead of sleeping. You get what I'm trynna say? No? Pfft.",
+            "Lmao! I just saw {person} slipping on the wet marble floor. Of course I am laughing at it, duh!",
+            "Am I kinda special? Like... I don't know... I don't feel like those 'kids'. I'm so different!",
+            "I was shocked to find out {puberty}.",
+            "Guess what I found when I went to the washroom recently? I saw {puberty}! That's crazy!",
+            "Is having {puberty} normal? Like... I don't know what to do...",
+            "I got {grade} in {subject}, well... I {feel} {subject} regardless.",
+            "I think I {feel} studying.",
+            "Do I move out yet? Like damn... how'd it feel? On a second thought... I'm a bit lo- nah, won't work!"
+        ]
+    },
+    "teen_events": {
+        "keys": [
+            "{subject}",
+            "{act}"
+        ],
+        "subject": [
+            "Mathematics",
+            "Biology",
+            "Physics",
+            "Chemistry",
+            "History",
+            "Political Science",
+            "Geography",
+            "Language",
+            "Linguistics",
+            "Computer Science"
+        ],
+        "act": [
+            "draw",
+            "sing",
+            "party",
+            "paint",
+            "chat",
+            "travel"
+        ],
+        "events": [
+            "[yello]I've bee quite worried about stuff lately.[/yellow] Like... what am I gonna major in? {subject} or something?",
+            "My grades are average. Although I could care less about it, [yellow]I wonder what's up with my university admission prospects.[/yellow]",
+            "[green]I think that I'm doing quite good at {subject},[/green] should I perhaps major in it at university?",
+            "[red]I do quite struggle with {subject}.[/red] Should I avoid majoring in it? [yellow]On the other hand... should I pick up a challenge?[/yellow]",
+            "After my recent [red]mess-up in the {subject} test,[/red] I really can't wait to end this shit. Oh no, I'm not talking about sui- I a-am just saying [red]I don't wanna study tbh.[/red]",
+            "Damn... [red]I hate these Entrance Exams[/red]... why tf should I study so much for a three-hour silly exam that's gonna decide my life?",
+            "[yellow]It's been three years since I have kept myself far from all the fun[/yellow] -- {act}ing, for example... for this silly Entrace Exam. Istg if I fail... I'm gonna...",
+            "Mocks, mocks, mocks!!! Hell with the mocks, [red]I don't wanna do it![/red] I'd rather {act}!"
+        ]
+    },
+    "youth_events": {
+        "keys": [
+            "{act}",
+            "{feel}",
+            "{person}",
+            "{thing}",
+            "{place}"
+        ],
+        "act": [
+            "play football",
+            "talk to my friends",
+            "eat cheese",
+            "travel"
+        ],
+        "feel": [
+            "[green]enjoy[/green]",
+            "[green]like[/green]",
+            "[green]love[/green]",
+            "[red]despise[/red]",
+            "[red]hate[/red]",
+            "[yellow]don't care[/yellow] about",
+            "[yellow]don't understand[/yellow]"
+        ],
+        "person": [
+            "my grandfather",
+            "my grandmother",
+            "my aunt",
+            "my cousin",
+            "my friend"
+        ],
+        "thing": [
+            "the lottery",
+            "myself",
+            "a nice cup of coffee",
+            "GTA VI",
+            "a chocolate bar"
+        ],
+        "place": [
+            "lawn",
+            "library",
+            "mall",
+            "fishmarket",
+            "supermarket",
+            "showroom"
+        ],
+        "events": [
+            "I've started going to the {place} more often.",
+            "I wonder what {person} must be up to...",
+            "[red]I am kinda scared for the future...[/red] job, finances and of course, {thing}!",
+            "I think I {feel} it when I {act}.",
+            "I {feel} taxes...",
+            "How the hell do I even pay taxes?",
+            "I went to a {place} with {person} and I {feel} it!",
+            "I decided to {act}. Gotta say... I {feel} it.",
+            "Will I ever learn how to {act} correctly? I'm just so fed up!",
+            "[yellow]Is it gonna get any better...?[/yellow]"
+        ]
+    },
+    "adult_events": {
+        "keys": [
+            "{act}",
+            "{feel}",
+            "{person}",
+            "{place}",
+            "{thing}"
+        ],
+        "act": [
+            "chat",
+            "eat",
+            "talk",
+            "walk"
+        ],
+        "feel": [
+            "[green]enjoy[/green]",
+            "[green]like[/green]",
+            "[green]love[/green]",
+            "[red]despise[/red]",
+            "[red]hate[/red]",
+            "[yellow]don't care[/yellow] about",
+            "[yellow]don't understand[/yellow]"
+        ],
+        "person": [
+            "my friend",
+            "my neighbour",
+            "my dog",
+            "my cat",
+            "a hobo",
+            "a thug",
+            "a drunk man",
+            "a convict"
+        ],
+        "place": [
+            "a mosque",
+            "a temple",
+            "a church",
+            "some ruins",
+            "a mall",
+            "a library",
+            "the carnival",
+            "the supermarket"
+        ],
+        "thing": [
+            "a book",
+            "a notebook",
+            "a Raspberry Pi",
+            "an iPhone",
+            "a playstation"
+        ],
+        "events": [
+            "I went to {place} with {person}. I'd say, they do have a vibe...",
+            "I absolutely {feel} {act}ing ever since I started doing it regularly!",
+            "Today, {person} took me to {place}. I saw weird stuff there...",
+            "I saw {thing} being sold at {place}, decided to buy it right there! Gotta say... I {feel} it.",
+            "It wasn't long before {person} decided to show their true colours...",
+            "[red]My life has went downhill[/red] ever since I met with {person} at {place}.",
+            "What is life?",
+            "Like realy... What the hell is life?",
+            "[yellow]I'm having a midlife crisis, I think...[/yellow]",
+            "[red]I wanna end it.[/red] Yes, I'm talking about my life."
+        ]
+    },
+    "mid_age_events": {
+        "keys": [
+            "{act}",
+            "{feel}",
+            "{person}",
+            "{place}",
+            "{thing}"
+        ],
+        "act": [
+            "chat",
+            "walk",
+            "talk",
+            "play",
+            "eat",
+            "sleep"
+        ],
+        "feel": [
+            "[green]enjoy[/green]",
+            "[green]like[/green]",
+            "[green]love[/green]",
+            "[red]despise[/red]",
+            "[red]hate[/red]",
+            "[yellow]don't care[/yellow] about",
+            "[yellow]don't understand[/yellow]"
+        ],
+        "person": [
+            "a friend",
+            "a random guy",
+            "a hobo",
+            "a cop",
+            "a theif",
+            "a thug",
+            "a neighbour",
+            "a dog",
+            "a cat"
+        ],
+        "place": [
+            "the bathroom",
+            "the lawn",
+            "a carnival",
+            "an adventure park",
+            "a concert",
+            "my friend's house",
+            "a cemetry"
+        ],
+        "thing": [
+            "a book",
+            "a book named 'Classical Mechanics'",
+            "a book, titled 'Origin of Species'",
+            "a calculator",
+            "a nice cup of coffee",
+            "a notebook",
+            "a pen",
+            "an iPhone",
+            "an electric kit"
+        ],
+        "events": [
+            "At this age... {thing} is all I need.",
+            "I {feel} it when I {act}.",
+            "Should I try {act} or rather go to {place} with {person}?",
+            "I often think that {place} is where I'd wanna spend what's left of this life...",
+            "Damn... the wrinkles and all. Wasn't I just a kid yesterday?",
+            "I am thinking about {thing}, should I buy it?",
+            "Ever since I turned 45, life has been quite boring, ngl.",
+            "Will I ever stop going to {place}? I always {feel} it when I go there...",
+            "My face has lost it's shine over these years... Is this the reality of life? Wear-out?",
+            "I often feel down, but then I remember the time that I spent with {person} at {place}. Quite refreshing..."
+        ]
+    },
+    "old_age_events": {
+        "keys": [
+            "{act}",
+            "{feel}",
+            "{person}",
+            "{place}",
+            "{thing}",
+            "{organ}"
+        ],
+        "act": [
+            "chat",
+            "walk",
+            "talk",
+            "play",
+            "eat",
+            "sleep"
+        ],
+        "feel": [
+            "[green]enjoy[/green]",
+            "[green]like[/green]",
+            "[green]love[/green]",
+            "[red]despise[/red]",
+            "[red]hate[/red]",
+            "[yellow]don't care[/yellow] about",
+            "[yellow]don't understand[/yellow]"
+        ],
+        "person": [
+            "a friend",
+            "a random guy",
+            "a hobo",
+            "a cop",
+            "a theif",
+            "a thug",
+            "a neighbour",
+            "a dog",
+            "a cat"
+        ],
+        "place": [
+            "the bathroom",
+            "the lawn",
+            "a carnival",
+            "an adventure park",
+            "a concert",
+            "my friend's house",
+            "a cemetry"
+        ],
+        "thing": [
+            "a book",
+            "a book named 'Classical Mechanics'",
+            "a book, titled 'Origin of Species'",
+            "a calculator",
+            "a nice cup of coffee",
+            "a notebook",
+            "a pen",
+            "an iPhone",
+            "an electric kit"
+        ],
+        "organ": [
+            "stomach",
+            "chest",
+            "eye",
+            "nose",
+            "back",
+            "leg",
+            "foot",
+            "hand",
+            "arm",
+            "neck"
+        ],
+        "events": [
+            "At this age... after the retirement all all that, [yellow]what's the purpose of living?[/yellow]",
+            "I {feel} it when I {act}, but my old {organ} does not allow me much these days...",
+            "Ah! My {organ} hurts badly today!",
+            "No one spends time with mr, anymore. Not even {person}, not even... no one!",
+            "[red]I'm already dead...[/red] how long is it gonna take for me to reach the grave now? Just... just bring it on already!",
+            "Oh look at poor old me! Where's all that arrogance now?",
+            "Now I understand why work is important. Hell... hell.. Literal [red]HELL[/red] here!",
+            "I should probably go to a doctor for whatever is happening with my {organ} these days...",
+            "I don't wanna depend on people... especially not {person}! Get me outta here!",
+            "To overcome the dread of my retirement, I've started going to {place} more often. Life doesn't hit like all that anymore, though..."
+        ]
+    },
+    "popups": {
+        "age5": {
+            "header": [
+                "To school!",
+                "There you go!",
+                "First steps."
+            ],
+            "message": [
+                "[white]I started Elementary School.",
+                "[white]I have been enrolled into an Elementary School. Classes start soon!",
+                "[white]An Elementary School has admitted me for the fresh year."
+            ]
+        },
+        "age10": {
+            "header": [
+                "Level up!",
+                "I'm growinggg!",
+                "Yoohoo!"
+            ],
+            "message": [
+                "[white]I got into Middle School.",
+                "[white]I completed my Elementary School, now I'm up for Middle School.",
+                "[white]I just started Middle School! I'm looking forward to it."
+            ]
+        },
+        "age15": {
+            "header": [
+                "There's more?",
+                "This sucks!",
+                "I'm fed up of this!"
+            ],
+            "message": [
+                "[white]Welp! High School starts. Bet I'm gonna get bullied, day one!",
+                "[white]Joining High School from tomorrow. I'm tired tbh...",
+                "[white]Well... At least I did get promoted to High School, unexpectedly."
+            ]
+        }
+    },
+    "interactive": {
+        "age3": {
+            "keys": [
+                "{parent}"
+            ],
+            "head": [
+                "Vaccination.",
+                "Ouch!",
+                "Shivers!!!"
+            ],
+            "message": {
+                "[white]My {parent} took me to a clinic to get vaccinated. As the Doctor approached me with a syringe...[/white]": {
+                    "options": {
+                        "to stay calm.": [
+                            "[green][+hlt][+hap][+dis]The Doctor pat my head.[/green]",
+                            "[green][+hlt][+hap][+dis]My {parent} smiled at me.[/green]",
+                            "[green][+hlt][+dis]The sting didn't last long, surprisingly.[/green]"
+                        ],
+                        "to bite my {parent}'s hand.": [
+                            "[+hlt][-hap][-dis]My {parent} shouted at me. [red]I started crying.[/red]",
+                            "[+hlt][-dis][red]It drew out some blood from my {parent}'s hand.[/red]"
+                        ],
+                        "to pee on the Doctor's face.": [
+                            "[+hlt][-dis][+hap][green]The Doctor laughed about it and called me a 'little devil'.[/green]",
+                            "[+hlt][-dis][yellow]My {parent} was embaressed.[/yellow]",
+                            "[+hlt][-dis]The whole clinic went quiet."
+                        ]
+                    }
+                }
+            }
+        },
+        "child": {
+            "keys": [
+                "{parent}",
+                "{person}",
+                "{feel}",
+                "{thing}",
+                "{place}"
+            ],
+            "head": [
+                "Tough Choice!",
+                "You know it...",
+                "Is it necessary?",
+                "Do I have to?",
+                "WHY???"
+            ],
+            "place": [
+                "a museum",
+                "a mall",
+                "a garden",
+                "a cemetry",
+                "a haunted mansion",
+                "an adventure park",
+                "my neighbour's house",
+                "my grandmother's house"
+            ],
+            "person": [
+                "my grandfather",
+                "my grandmother",
+                "my aunt",
+                "my cousin",
+                "my friend",
+                "my teacher"
+            ],
+            "feel": [
+                "[green]enjoy[/green]",
+                "[green]like[/green]",
+                "[green]love[/green]",
+                "[red]despise[/red]",
+                "[red]hate[/red]",
+                "[yellow]don't care[/yellow] about",
+                "[yellow]don't understand[/yellow]"
+            ],
+            "thing": [
+                "a book",
+                "a notebook",
+                "a pen",
+                "a calculator",
+                "an electric kit",
+                "a toy laptop"
+            ],
+            "message": {
+                "[white]My {parent} is taking me to {place}, but I don't think that I'll enjoy going there.[/white]": {
+                    "options": {
+                        "to outright refuse!": [
+                            "[-dis][-hap][red]My {parent} scolded me. And I still have to go to.",
+                            "[-dis][-hap][red]I have been grounded for a week.[/red]",
+                            "[-dis][-hap]They decided to leave me at home... [red]but they weren't back till midnight. Scary.[/red]"
+                        ],
+                        "to agree, reluctantly.": [
+                            "[+dis][-hap][red]I really didn't have any fun there.[/red]",
+                            "[+dis][-hap][red]I'm never goingback there![/red]",
+                            "[+dis][-hap][red]What even was the point of going there?[/red]"
+                        ],
+                        "to agree, hoping that I'll still have some fun.": [
+                            "[+dis][+hap][green]Wow! I didn't know they had a playstation back there![/green]",
+                            "[+dis][+hap][green]I did actually enjoy going there...[/green]",
+                            "[+dis][+hap][green]I think I wanna go there again.[/green]"
+                        ]
+                    }
+                },
+                "[white]I came back home and found out that {person} has kept {thing} for me on the table.[/white]": {
+                    "options": {
+                        "to send it back to them.": [
+                            "[-dis][-hap][red]They were disappointed when they saw me next time.[/red]",
+                            "[-dis][-hap][red]My {parent} grounded me after getting to know about it.[/red]",
+                            "[-dis][-hap][red]I don't think that was a good thing to do.[/red] Do I care though?"
+                        ],
+                        "to accept it and send them a 'thank you' letter in return.": [
+                            "[+dis][+hap][green]They gave me another gift when they met me next time.[/green]",
+                            "[+dis][+hap][green]I recieved a 'welcome' letter... and a chocolate.[/green]",
+                            "[+dis][+hap][green]I feel good.[/green]"
+                        ],
+                        "to keep the gift.": [
+                            "[-dis][+hap][yellow]I think I should've thanked them.[/yellow]"
+                        ]
+                    }
+                },
+                "[white]My {person} is asking me to do my homework. But I don't feel like it...": {
+                    "options": {
+                        "to hide a comic in my book.": [
+                            "[-smr][+hap][-dis][yellow]I was really sneaky with it...[/yellow] They thought I'm studying!",
+                            "[-smr][+hap][-dis]I worked??? [yellow]I failed the exam tho...[/yellow]",
+                            "[-smr][+hap][+hap][-dis]I'll do it again!"
+                        ],
+                        "to play with my toys instead!": [
+                            "[-smr][-hap][-dis][red]I've been grounded![/red]",
+                            "[-smr][-hap][-dis][red]My teachers sent a complaint letter, back home.[/red]"
+                        ],
+                        "to actually study.": [
+                            "[+hap][+smr][+dis]It was boringgg... but hey, [green]I aced the exam![/green]",
+                            "[-hap][+smr][+dis]God, I hate studying!",
+                            "[-hap][+smr][+dis]How do people even study...?"
+                        ]
+                    }
+                }
+            }
+        },
+        "young_teen": {
+            "keys": [
+                "{parent}",
+                "{person}",
+                "{feel}",
+                "{thing}",
+                "{place}"
+            ],
+            "head": [
+                "Tough Choice!",
+                "You know it...",
+                "Is it necessary?",
+                "Do I have to?",
+                "WHY???"
+            ],
+            "place": [
+                "a museum",
+                "a mall",
+                "a garden",
+                "a cemetry",
+                "a haunted mansion",
+                "an adventure park",
+                "my neighbour's house",
+                "my grandmother's house"
+            ],
+            "person": [
+                "my grandfather",
+                "my grandmother",
+                "my aunt",
+                "my cousin",
+                "my friend",
+                "my teacher"
+            ],
+            "feel": [
+                "[green]enjoy[/green]",
+                "[green]like[/green]",
+                "[green]love[/green]",
+                "[red]despise[/red]",
+                "[red]hate[/red]",
+                "[yellow]don't care[/yellow] about",
+                "[yellow]don't understand[/yellow]"
+            ],
+            "thing": [
+                "a book",
+                "a notebook",
+                "a pen",
+                "a calculator",
+                "an electric kit",
+                "a toy laptop"
+            ],
+            "message": {
+                "[white]I think I {feel} it when I study. What should I do about it?": {
+                    "options": {
+                        "to think that studying is for losers!": [
+                            "[-smr][-hap][-dis]Whoa! It isn't?",
+                            "[-smr][+hap][-dis]Of course!"
+                        ],
+                        "that I'd talk to my elders about it...": [
+                            "[+smr][+hap][+dis]I feel good now...",
+                            "[-hap][red]They scolded me...[/red]"
+                        ],
+                        "to study, regardless.": [
+                            "[+smr][+hap][+dis]I'm a person of sheer will!"
+                        ]
+                    }
+                },
+                "[white]I want to buy {thing}. Do I have money for it?": {
+                    "options": {
+                        "spend most of my savings on it.": [
+                            "[+hap][-smr][-dis]Wow! I don't know what to say...",
+                            "[+hap][-smr][-dis]Spending is an addiction! I love it! SHOP, SHOP, SHOP!"
+                        ],
+                        "save up for the future.": [
+                            "[-hap][+smr][+dis]It would've been fun to buy some cool stuff though...",
+                            "[-hap][+smr][+dis]Yeah, don't even let me enjoy!"
+                        ]
+                    }
+                },
+                "[white]I went with {person} to {place} and found {thing} lying around...": {
+                    "options": {
+                        "pick it up, of course!": [
+                            "[+hap][-dis]It's fun to have free stuff!",
+                            "[+hap][-dis]I love it!"
+                        ],
+                        "let it be.": [
+                            "[-hap][+dis]Well, it's tempting, but no!",
+                            "[-hap][+dis]I think I should try to see if I can buy it though..."
+                        ]
+                    }
+                }
+            }
+        },
+        "teen": {
+            "keys": [
+                "{parent}",
+                "{person}",
+                "{feel}",
+                "{thing}",
+                "{place}"
+            ],
+            "head": [
+                "Tough Choice!",
+                "You know it...",
+                "Is it necessary?",
+                "Do I have to?",
+                "WHY???"
+            ],
+            "place": [
+                "a museum",
+                "a mall",
+                "a garden",
+                "a cemetry",
+                "a haunted mansion",
+                "an adventure park",
+                "my neighbour's house",
+                "my grandmother's house"
+            ],
+            "person": [
+                "grandfather",
+                "grandmother",
+                "aunt",
+                "cousin",
+                "friend",
+                "teacher"
+            ],
+            "feel": [
+                "[green]enjoy[/green]",
+                "[green]like[/green]",
+                "[green]love[/green]",
+                "[red]despise[/red]",
+                "[red]hate[/red]",
+                "[yellow]don't care[/yellow] about",
+                "[yellow]don't understand[/yellow]"
+            ],
+            "thing": [
+                "a book",
+                "a notebook",
+                "a pen",
+                "a calculator",
+                "an electric kit",
+                "a laptop",
+                "a mobile phone"
+            ],
+            "message": {
+                "[white]I want to go to {place} but my {parent} is not allowing me!": {
+                    "options": {
+                        "to sneak out at night!": [
+                            "[+hap][+hap][-dis][-dis]Mwahaha! Love it!",
+                            "[+hap][+hap][-dis][-dis]I had real fun tonight!"
+                        ],
+                        "to ask my parents for permission.": [
+                            "[+smr][+hap][+dis]Yay! They agreed, actually!",
+                            "[-hap][-hap][+dis][red]They locked me inside my room...[/red]"
+                        ],
+                        "to stay back.": [
+                            "[+smr][+smr][+dis]I won't bother myself with unnecessary drama."
+                        ]
+                    }
+                },
+                "[white]My {person} asked me to get them {thing} from the shelf.": {
+                    "options": {
+                        "refuse!": [
+                            "[+hap][-dis]Wow! They think I'm a servant or something?",
+                            "[+hap][-dis]They told my parents abou it. So petty!"
+                        ],
+                        "give it to them.": [
+                            "[-hap][+smr][+dis]Sure. I'm a big helper!",
+                            "[-hap][+smr][+dis]Of course!"
+                        ]
+                    }
+                }
+            }
+        },
+        "youth": {
+            "keys": [
+                "{parent}",
+                "{person}",
+                "{feel}",
+                "{thing}",
+                "{place}"
+            ],
+            "head": [
+                "Tough Choice!",
+                "You know it...",
+                "Is it necessary?",
+                "Do I have to?",
+                "WHY???"
+            ],
+            "place": [
+                "a museum",
+                "a mall",
+                "a garden",
+                "a cemetry",
+                "a haunted mansion",
+                "an adventure park",
+                "my neighbour's house",
+                "my grandmother's house"
+            ],
+            "person": [
+                "grandfather",
+                "grandmother",
+                "aunt",
+                "cousin",
+                "friend",
+                "teacher"
+            ],
+            "feel": [
+                "[green]enjoy[/green]",
+                "[green]like[/green]",
+                "[green]love[/green]",
+                "[red]despise[/red]",
+                "[red]hate[/red]",
+                "[yellow]don't care[/yellow] about",
+                "[yellow]don't understand[/yellow]"
+            ],
+            "thing": [
+                "a book",
+                "a book named 'Classical Mechanics'",
+                "a book, titled 'Origin of Species'",
+                "a notebook",
+                "a pen",
+                "a calculator",
+                "an electric kit",
+                "a laptop",
+                "a mobile phone"
+            ],
+            "message": {
+                "[white]It's my {person}'s birthday! What should I do?": {
+                    "options": {
+                        "to skip it!": [
+                            "[-hap]I don't care about them!"
+                        ],
+                        "that I'd attend,but won't gift them anything.": [
+                            "[+hap][-dis]Whatever. I want that cake!"
+                        ],
+                        "to attend and gift them something precious.": [
+                            "[+smr][+hap][+dis][green]They were so happy![/green]"
+                        ]
+                    }
+                },
+                "[white]I think I {feel} it when I meet my friend's {person} at {place}, all the time.": {
+                    "options": {
+                        "to shout at them and make them go away.": [
+                            "[-dis]Well, I think I'm better off without them!"
+                        ],
+                        "to Mew.": [
+                            "[+hap][+hlt][+smr][+lks][+phy][+dis]Eat 5-star, do nothing! 🤫[+hap][+hlt][+smr][+lks][+phy][+dis]"
+                        ]
+                    }
+                }
+            }
+        },
+        "adult": {
+            "keys": [
+                "{person}",
+                "{feel}",
+                "{thing}",
+                "{place}"
+            ],
+            "head": [
+                "Tough Choice!",
+                "You know it...",
+                "Is it necessary?",
+                "Do I have to?",
+                "WHY???"
+            ],
+            "place": [
+                "a museum",
+                "a mall",
+                "a garden",
+                "a cemetry",
+                "a haunted mansion",
+                "an adventure park",
+                "my neighbour's house",
+                "my grandmother's house"
+            ],
+            "person": [
+                "my aunt",
+                "my cousin",
+                "my friend",
+                "my teacher",
+                "my neighbour",
+                "a cop",
+                "a drunk man",
+                "a hobo",
+                "a thug"
+            ],
+            "feel": [
+                "[green]enjoy[/green]",
+                "[green]like[/green]",
+                "[green]love[/green]",
+                "[red]despise[/red]",
+                "[red]hate[/red]",
+                "[yellow]don't care[/yellow] about",
+                "[yellow]don't understand[/yellow]"
+            ],
+            "thing": [
+                "a book",
+                "a book named 'Classical Mechanics'",
+                "a book, titled 'Origin of Species'",
+                "a notebook",
+                "a pen",
+                "a calculator",
+                "an electric kit",
+                "a laptop",
+                "a mobile phone"
+            ],
+            "message": {
+                "[white]I think I {feel} it when {person} keeps telling me about {thing}.": {
+                    "options": {
+                        "to slap them across the face!": [
+                            "[+hap][+hap][-dis][-dis]Like yeah, stop bothering me!"
+                        ],
+                        "that I'd rather stop talking to them!": [
+                            "[+hap]Whatever, pfft!"
+                        ],
+                        "to understand their feelings about the thing.": [
+                            "[+smr][+smr][+dis][+dis]Now that's me!"
+                        ]
+                    }
+                },
+                "[white]After reaching {place} with {person}, I felt that I don't really wanna be there...": {
+                    "options": {
+                        "to sneak out, get back back home...": [
+                            "[-dis][-dis][-dis][+hap][+hap]Shhh!"
+                        ],
+                        "that I'd stay there, have some respect.": [
+                            "[-hap][-hap][+dis][+smr]I got some class, fr."
+                        ]
+                    }
+                },
+                "[white]I just came back from {place} and I really feel low today...": {
+                    "options": {
+                        "to drink up some good old whiskey!": [
+                            "[-hlt][-hlt][-dis][-dis][+hap][+hap]Uh... Where am I?"
+                        ],
+                        "to try occupying myself with something inetresting!": [
+                            "[+dis][+smr]I learnt a bit about BBQ and stuff. Inetresting...",
+                            "[+dis][+smr][+phy]I played some football!"
+                        ]
+                    }
+                }
+            }
+        },
+        "mid_age": {
+            "keys": [
+                "{person}",
+                "{feel}",
+                "{thing}",
+                "{place}"
+            ],
+            "head": [
+                "Tough Choice!",
+                "You know it...",
+                "Is it necessary?",
+                "Do I have to?",
+                "WHY???"
+            ],
+            "place": [
+                "a museum",
+                "a mall",
+                "a garden",
+                "a cemetry",
+                "a haunted mansion",
+                "an adventure park",
+                "my neighbour's house",
+                "my grandmother's house"
+            ],
+            "person": [
+                "my aunt",
+                "my cousin",
+                "my friend",
+                "my teacher",
+                "my neighbour",
+                "a cop",
+                "a drunk man",
+                "a hobo",
+                "a thug"
+            ],
+            "feel": [
+                "[green]enjoy[/green]",
+                "[green]like[/green]",
+                "[green]love[/green]",
+                "[red]despise[/red]",
+                "[red]hate[/red]",
+                "[yellow]don't care[/yellow] about",
+                "[yellow]don't understand[/yellow]"
+            ],
+            "thing": [
+                "a book",
+                "a book named 'Classical Mechanics'",
+                "a book, titled 'Origin of Species'",
+                "a notebook",
+                "a pen",
+                "a calculator",
+                "an electric kit",
+                "a laptop",
+                "a mobile phone"
+            ],
+            "message": {
+                "[white]I recently visited {place} and felt that I couldn't stand for too long.": {
+                    "options": {
+                        "to stop thinking about it.": [
+                            "[-hlt][-hlt]What could go wrong?"
+                        ],
+                        "that I'd visit a Doctor ASAP.": [
+                            "[+hlt][+hlt][green]I feel better...[/green]"
+                        ]
+                    }
+                },
+                "[white]I'm really fed up with {person}. Like, I do {feel} it when I'm with them, but still!": {
+                    "options": {
+                        "to ask them to leave me alone.": [
+                            "[-dis][-dis][-dis][+hap][+hap]They cried!? LMAO."
+                        ],
+                        "to let it be... I ain't a damn teen anymore!": [
+                            "[-hap][-hap][+dis][+smr]Why did I grow up?"
+                        ]
+                    }
+                },
+                "[white]Well, {person} just asked me if I have any plans for life after retirement. Do I?": {
+                    "options": {
+                        "to tell them that I don't.": [
+                            "[-smr]True though."
+                        ],
+                        "to smile and keep quiet.": [
+                            "[+hlt][+hap][+smr][+lks][+phy][+dis]BYE-BYE! 🤫"
+                        ]
+                    }
+                }
+            }
+        },
+        "old_age": {
+            "keys": [
+                "{person}",
+                "{feel}",
+                "{thing}",
+                "{place}",
+                "{organ}"
+            ],
+            "head": [
+                "Tough Choice!",
+                "You know it...",
+                "Is it necessary?",
+                "Do I have to?",
+                "WHY???"
+            ],
+            "place": [
+                "a museum",
+                "a mall",
+                "a garden",
+                "a cemetry",
+                "a haunted mansion",
+                "an adventure park",
+                "my neighbour's house",
+                "my grandmother's house"
+            ],
+            "person": [
+                "my niece",
+                "my nephew",
+                "my cousin",
+                "my friend",
+                "my friend's kid",
+                "my neighbour",
+                "a cop",
+                "a drunk man",
+                "a hobo",
+                "a thug"
+            ],
+            "feel": [
+                "[green]enjoy[/green]",
+                "[green]like[/green]",
+                "[green]love[/green]",
+                "[red]despise[/red]",
+                "[red]hate[/red]",
+                "[yellow]don't care[/yellow] about",
+                "[yellow]don't understand[/yellow]"
+            ],
+            "thing": [
+                "a book",
+                "a book named 'Classical Mechanics'",
+                "a book, titled 'Origin of Species'",
+                "a notebook",
+                "a pen",
+                "a calculator",
+                "an electric kit",
+                "a laptop",
+                "a mobile phone"
+            ],
+            "organ": [
+                "stomach",
+                "chest",
+                "eye",
+                "nose",
+                "back",
+                "leg",
+                "foot",
+                "hand",
+                "arm",
+                "neck"
+            ],
+            "message": {
+                "[red]I feel like my {organ} is on literal FLAMES![/red]": {
+                    "options": {
+                        "to stop thinking about it.": [
+                            "[-hlt][-hlt]What could go wrong?"
+                        ],
+                        "pray to the God... the Gods or Goddesses... or something?": [
+                            "[-hlt][-hlt][-hap][-hap]Hello? Is anyone even listening?"
+                        ],
+                        "to get myself checked": [
+                            "[+hlt][+hlt][green]I feel better...[/green]"
+                        ]
+                    }
+                },
+                "[white]Ow ow! While walking around at {place} I fell down from a single stair!": {
+                    "options": {
+                        "to get up...": [
+                            "[+dis][+dis][-hap][-hap][-hlt][-hlt][-hlt]Old age! Hate it!"
+                        ]
+                    }
+                },
+                "[white]While at {place}, {person} taunted me about my age and said that I'm more brittle than a toothpick...": {
+                    "options": {
+                        "to defend myself": [
+                            "[-smr][-hlt][-hap]Nooo, how could you???"
+                        ],
+                        "to continue my Mewing streak.": [
+                            "[+hlt][+hap][+smr][+lks][+phy][+dis]HAH, BYE-BYE! 🤫"
+                        ]
+                    }
+                }
+            }
+        },
+        "university": {
+            "keys": [
+                "{person}",
+                "{parent}",
+                "{major}"
+            ],
+            "head": [
+                "Am I even doing it?",
+                "Will I cook?",
+                "So confused!"
+            ],
+            "person": [
+                "grandmother",
+                "grandfather",
+                "aunt",
+                "uncle",
+                "cousin",
+                "teacher",
+                "friend"
+            ],
+            "major": [
+                "I should major in Mathematics",
+                "I should try for Physics",
+                "I should think about getting into Biology",
+                "Chemistry would be a great major",
+                "Computer Science has promising job prospects",
+                "Language is nice",
+                "Political Science will be a suitable major for me"
+            ],
+            "message": {
+                "[white]I completed my High School. Well that's fine... But what'll I do next? My {person} suggests that {major}.[/white]": {
+                    "options": {
+                        "to try out Mathematics.": [
+                            "Am I good to go?",
+                            "I'm Cooked fr.",
+                            "The hell was I thinking?"
+                        ],
+                        "to major in Physics.": [
+                            "Well... it's kinda hot.",
+                            "Am I sane?",
+                            "What was my calc score last time?"
+                        ],
+                        "to go with Biology.": [
+                            "I hope that my curriculum has less of Biochem...",
+                            "DNA-Uracil, RNA-Thymine. Or... was it the other way around? ",
+                            "Hey at least I'm safe from Mathematics... Right...?"
+                        ],
+                        "that Chemistry is what I want.": [
+                            "Ew!",
+                            "I gotta be kidding!",
+                            "Hey at least... nah there's no defense for Chemistry. FML."
+                        ],
+                        "that Computer Science has some good packa-passion, I meant passion.": [
+                            "Let's go? Let's...  go, I guess?",
+                            "Will I ever bathe again?",
+                            "Touching grass would feel a lot more different now!"
+                        ],
+                        "to go for Engineering.": [
+                            "Mhmm... let's see!",
+                            "Well, what's next?",
+                            "I'm gonna declare a major in Electrical, I guess..."
+                        ],
+                        "opt for Language.": [
+                            "Okay... vacation?",
+                            "Imagine...",
+                            "I can smell unemployment from miles."
+                        ],
+                        "to choose Political Science.": [
+                            "Yup, yup.",
+                            "I don't really care... let's study for some government job examinations instead...",
+                            "I'm confused!"
+                        ],
+                        "that I'd rather not!": [
+                            "I don't care about it...",
+                            "Don't wanna be a pen-pusher anymore!",
+                            "NO SCHOOL! NO MORE SCHOOL!"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
