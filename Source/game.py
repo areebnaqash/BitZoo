@@ -13,7 +13,7 @@ import json  # For getting our <.json> data.
 import random  # For all the <random()> funcs inculding <choice()>, <randint()>, etc.
 from numpy.random import choice as npchoice, triangular as tri  # For randoms, as well.
 
-# Also, the <triangular()> or <tri()> helps in generating traingular randoms (with min, max, mode and max values)
+# Also, the <triangular()> or <tri()> helps in generating traingular randoms (with min, mode and max values)
 # It will help in generating a weighted random float within a specified range, which can be rounded off to get a clean int.
 
 # This <PATH> var will store the path of the game directory, regardless of whose (Windows) PC it's running on.
