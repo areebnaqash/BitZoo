@@ -14,6 +14,10 @@ The name *BitZoo* can be etymologically described as follows:
 Now, with that out of the way, let's move onto the actual project.
 
 ## Features
+<sub>*An example image from a gameplay session:*</sub>
+
+![BitZoo_screenshot](https://github.com/user-attachments/assets/177b79e3-a3df-4339-a223-da7dea79b6dd)
+
 The project, and thus, the game itself is inspired from the plethora of *life simulators* out there. The name of my project might unequivocally point towards such a possibility. I've tried to implement the utmost basic mechanics of an average *life simulator* into my humble project. These include:
 * **Menu**
 	* A menu is basically needed in every game. It has various navigation options.
@@ -42,10 +46,6 @@ The project, and thus, the game itself is inspired from the plethora of *life si
   * An option which enables the player to seek a job and earn money.
 * **Lifestyle**
   * From money earnt to money spent! This option provides the player with some use of their *salary* in the form of a tier based list of lifestyles, from which, a suitable lifestyle can be chosen to avail its perks.
- 
-<sub>*And now, an example image from a gameplay session:*</sub>
-
-![BitZoo_screenshot](https://github.com/user-attachments/assets/177b79e3-a3df-4339-a223-da7dea79b6dd)
 
 As it can be seen. The game is presented as a TUI (Terminal User Interface) program. Thus, it's lightweight, but it comes with its own set of dependencies, which we'll be discussing below.
 
