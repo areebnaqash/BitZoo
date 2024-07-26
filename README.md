@@ -47,7 +47,7 @@ The project, and thus, the game itself is inspired from the plethora of *life si
 
 ![BitZoo_screenshot](https://github.com/user-attachments/assets/177b79e3-a3df-4339-a223-da7dea79b6dd)
 
-As it can be seen. The game is presented as a TUI (Terminal User Interface) program. Thus, it's lightweight, but it comes with it's own set of dependencies, which we'll be discussing below.
+As it can be seen. The game is presented as a TUI (Terminal User Interface) program. Thus, it's lightweight, but it comes with its own set of dependencies, which we'll be discussing below.
 
 ## Installation
 **This project is built keeping the Windows Operating System in mind.**
