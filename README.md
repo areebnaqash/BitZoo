@@ -1,6 +1,8 @@
 # BitZoo
 **A Life Simulator game written in Python.**
 
+<sup>*An example image from a gameplay is also provided below.*</sup>
+
 ## About
 **BitZoo** is fun project that I created over the span of (almost) six days. It is quite basic, raw and a lot lenient as far as the coding style goes. Well, I've intended it to be that way -- a fun project, from a beginner.
 
@@ -12,8 +14,6 @@ The name *BitZoo* can be etymologically described as follows:
 Now, with that out of the way, let's move onto the actual project.
 
 ## Features
-<sup>*An example image from a gameplay is also provided below.*</sup>
-
 The project, and thus, the game itself is inspired from the plethora of *life simulators* out there. The name of my project might unequivocally point towards such a possibility. I've tried to implement the utmost basic mechanics of an average *life simulator* into my humble project. These include:
 * **Menu**
 	* A menu is basically needed in every game. It has various navigation options.
