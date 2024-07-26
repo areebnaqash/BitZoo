@@ -2,11 +2,11 @@
 **A Life Simulator game written in Python.**
 
 ## Contents:
-* [About](https://github.com/areebnaqash/BitZoo/edit/main/README.md#about)
-* [Features](https://github.com/areebnaqash/BitZoo/edit/main/README.md#features) -- *Example image included*
-* [Installation](https://github.com/areebnaqash/BitZoo/edit/main/README.md#installation)
-* [Initializing the game](https://github.com/areebnaqash/BitZoo/edit/main/README.md#initializing-the-game)
-* [Conclusion](https://github.com/areebnaqash/BitZoo/edit/main/README.md#conclusion) -- *Important*
+* [About](https://github.com/areebnaqash/BitZoo/edit/main/README.md/about)
+* [Features](https://github.com/areebnaqash/BitZoo/edit/main/README.md/features) -- *Example image included*
+* [Installation](https://github.com/areebnaqash/BitZoo/edit/main/README.md/installation)
+* [Initializing the game](https://github.com/areebnaqash/BitZoo/edit/main/README.md/initializing-the-game)
+* [Conclusion](https://github.com/areebnaqash/BitZoo/edit/main/README.md/conclusion) -- *Important*
 
 ## About
 **BitZoo** is fun project that I created over the span of (almost) six days. It is quite basic, raw and a lot lenient as far as the coding style goes. Well, I've intended it to be that way -- a fun project, from a beginner.
