@@ -58,14 +58,8 @@ class StartMenu:  # The Start Menu is the first thing to show up on the screen.
             )  # To ensure that parents only get jobs of mid level and above (index 2 and above on the <.json> file).
             job = random.choice(list(jobs[jobtyp].keys()))
 
-            if job[0] in list(
-                "AEIOU"
-            ):  # Aligning the jobs into sentences, gramatically.
-                job = "an " + job
-            else:
-                job = "a " + job
-
-            return job
+            article = "an" if job[0] in "AEIOU" else "a"
+            return f"{article} {job}"
 
         menu = Menu(PATH)  # Menu will use PATH, as already discussed.
         character_data = menu[0]
