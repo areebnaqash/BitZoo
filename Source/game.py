@@ -157,7 +157,7 @@ def home_screen(data, datapath, logpath, action=None):
 
         if (
             len(data["diseases"]) > 0
-        ):  # Checking for diseases, and of yes, Death can be made more probable for the player.
+        ):  # Checking for diseases, and if yes, Death can be made more probable for the player.
             diseases = data["diseases"]
 
             for dis in diseases:
@@ -223,7 +223,6 @@ def home_screen(data, datapath, logpath, action=None):
 
         if data["gender"] == "male":
             pron = ["he", "his"]
-            pron
             gen = "man"
         else:
             pron = ["she", "her"]
