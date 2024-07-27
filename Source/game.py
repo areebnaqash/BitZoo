@@ -76,7 +76,8 @@ def main():  # The <main()> func that initiates the game.
 
         elif (
             menu.choice == "LoadLife"
-        ):  # Else, it will go onto load a file from the 'Lives' folder.
+        ):  
+            # Else, it will go onto load a file from the 'Lives' folder.
             with open(menu.data, "r", encoding="utf-8") as new_file:
                 load = json.load(new_file)
 
