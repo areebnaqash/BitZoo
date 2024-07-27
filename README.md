@@ -82,7 +82,7 @@ Assuming that the installation has been successful for you, we can move onto the
 Head over to the folder where you have downloaded the `\BitZoo` repo. Open it. Go inside the `\Source` repo and then run the `\game.py` file.
 
 ### From the Console
-Open up `cmd` or Windows Terminal. With the help of the `cd` commands, locate the directory in which the `\BitZoo` repo is present on your system. Then type the command `python game.py` or alternatively, `py game.py` to start the game.
+Open up `cmd` or Windows Terminal. With the help of the `cd` commands, locate the directory in which the `\BitZoo` repo is present on your system. Navigate to `\Source` using the `cd` command and then type the command `python game.py` or alternatively, `py game.py` to start the game.
 
 *Pertaining to personal experience, it is suggested that you install the [**Windows Terminal**](https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US&gl=US) -- purely for aesthetic reasons, here. Also, as a side note, if you want your game to look exactly like the one in the example image, then you should try out the **One Half Dark** Windows Terminal colour scheme.*
 
