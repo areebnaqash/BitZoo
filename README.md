@@ -89,7 +89,7 @@ Open up `cmd` or Windows Terminal. With the help of the `cd` commands, locate th
 ## Conclusion
 Well, that's all. I hope you enjoy this little game! Check out the source-code if possible. Play around with the `.json` files and have your custom places and scenarios playable, as per your taste. Play around with the code if you want. Let me know if you come across any errors or akin. Although I do not plan to work further on this project, since it was for fun, I am open to discussions about the code, and tweaks in it as well. So, let me know and I'll try to come up with a solution, or better, we could work on it together!
 
-**If you plan on modifying and/or distributing this project or any significant code from it, please read the `LICENSING.md` and the `LICENSE.md` files thoroughly. Be sure that you're in line with the GPL-3 License while doing this.**
+**If you plan on modifying and/or distributing this project or any significant code from it, please read the `LICENSE.md` file of the `\BitZoo` repository, as well as the `LICENSE.md` files of each source repository, thoroughly. Be sure that you're in line with the GPL-3 License while doing this.**
 
 Rest, do not hesitate to contact me through my Reddit account [AlphaNooon](https://www.reddit.com/user/AlphaNooon/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button), I'll be more than happy to learn and discuss!
 
