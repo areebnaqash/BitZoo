@@ -9,7 +9,7 @@
 Before diving deep into the whatabouts of the program, I'll firstly like to share the meaning behind the game's name.
 The name *BitZoo* can be etymologically described as follows:
 * **Bit**: The usual digital *bit* (Binary Digit).
-* **Zoo**: The **Kashmiri** word for *life* -- just like the **Greek** *Zoi*.
+* **Zoo**: The **Kashmiri** word for *life* (*Zuw*) -- just like the **Greek** *Zoi*.
 
 Now, with that out of the way, let's move onto the actual project.
 
